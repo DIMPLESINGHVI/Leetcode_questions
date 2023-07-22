@@ -15,14 +15,14 @@ public:
         // }
         // return nums.size();
         int x=0;
-        for(int l:nums)
+        for(int l:nums)  //xor kro toh x = 0^1^2...n tak ajayega
         {
             x ^=l;
         }
-        for(int i=0;i<=nums.size();i++)
-        {
+        for(int i=0;i<=nums.size();i++)  //abhi use the property a^a=0...toh x se 0 se n tak xor krdo, fir joh bache woh return.
+        {  
             x ^=i;
         }
-        return x;
+        return x;  //return idhar krdo
     }    
 };
